@@ -16,6 +16,8 @@ def cout_comment(comment, breaks=0):
 
 
 # ------------------------------------------------------------ UTIL FUNCTIONS
-
-age = int(input('Age: '))
-print(age)
+try:
+    age = int(input('Age: '))
+    print(age)
+except ValueError:
+    print("Invalid value");
