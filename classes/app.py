@@ -35,7 +35,7 @@ class Person:
         self.name = name
 
     def talk(self):
-        print(f"{self.name} is talking...")
+        print(f"Hi, I am {self.name}")
 
 
 person = Person('Rodolfo')
@@ -43,3 +43,32 @@ person.talk()
 
 john = Person('John Smith')
 john.talk()
+
+
+# ---------------------------------------- INHERITANCE
+class Mammal:
+    def walk(self):
+        print('walk')
+
+
+class Dog(Mammal):
+    def bark(self):
+        print('bark')
+
+
+class Cat(Mammal):
+    def be_annoying(self):
+        print('annoying')
+
+    def meaw(self):
+        print('meaw')
+
+
+dog = Dog()
+dog.walk()
+dog.bark()
+
+cat = Cat()
+cat.walk()
+cat.meaw()
+cat.be_annoying()
