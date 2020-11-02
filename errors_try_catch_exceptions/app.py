@@ -18,6 +18,8 @@ def cout_comment(comment, breaks=0):
 # ------------------------------------------------------------ UTIL FUNCTIONS
 try:
     age = int(input('Age: '))
+    income = 20000
+    risk = income / age
     print(age)
 except ValueError:
     print("Invalid value");
