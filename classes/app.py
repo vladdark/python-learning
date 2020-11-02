@@ -27,3 +27,19 @@ point = Point(10, 20)
 print(point.x)
 point.x = 11
 print(point.x)
+
+
+# ---------------------------------------- EXERCISE: CREATING PERSON CLASS
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"{self.name} is talking...")
+
+
+person = Person('Rodolfo')
+person.talk()
+
+john = Person('John Smith')
+john.talk()
