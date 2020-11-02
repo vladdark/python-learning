@@ -15,11 +15,14 @@ def cout_comment(comment, breaks=0):
     print(f'## {comment}')
 
 
-# ------------------------------------------------------------ UTIL FUNCTIONS
+cout_title("ERRORS | TRY | CATCH | EXCEPTIONS", breaks=0)
+# managin exceptions
 try:
     age = int(input('Age: '))
     income = 20000
     risk = income / age
     print(age)
+except ZeroDivisionError:
+    print('Age cannot be 0.')
 except ValueError:
-    print("Invalid value");
+    print('Invalid value.');
