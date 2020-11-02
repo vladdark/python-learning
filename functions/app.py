@@ -3,7 +3,7 @@ def greet_user(first_name, last_name):
     print("Welcome aboard!")
 
 
-def calc_cost(total, shipping, discount):
+def calc_cost(discount, total, shipping):
     print(f'total: {total}, shipping: {shipping}, discount: {discount}')
 
 
